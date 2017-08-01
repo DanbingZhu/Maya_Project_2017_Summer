@@ -6,8 +6,8 @@ import numpy as np
 def match(key_frame_file, all_frame_file):
 	index = []
 
-	key_frame_file = open("ORBSLAM_KeyTraj_1501442026.868876924.txt", "r")
-	all_frame_file = open("timestamp.txt", "r")
+	key_frame_file = open(key_frame_file, "r")
+	all_frame_file = open(all_frame_file, "r")
 	selected_frame_file = open("selected_frame.txt", "w")
 
 	key_frames = key_frame_file.readlines()
